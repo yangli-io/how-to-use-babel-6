@@ -19,8 +19,40 @@ npm install --save babel-preset-es2015
 }
 ````
 
-##Babel require hook
+##Babel for the Server
+* You can either use babel-register or babel-node
+* make sure you have .babelrc
+
+###Require Hook
 To develop using babel node, you can
 ```
 npm install --save babel-register
+```
+
+In your entry file
+entry.js
+````javascript
+require('babel-register');
+require('index.js');
+//Require any other files
+````
+
+[babel official documentation](https://babeljs.io/docs/setup/#babel_register)
+
+###Babel-node
+This adds a babel-node command
+```
+npm install --save babel-cli
+```
+
+In your terminal
+
+for npm 3
+```
+./node_modules/.bin/babel-node index.js
+```
+
+for npm 2 and older
+```
+./node_modules/babel-cli/bin/babel-node index.js
 ```
