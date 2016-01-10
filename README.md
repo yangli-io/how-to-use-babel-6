@@ -1,6 +1,8 @@
 # babel-6-installation-guide
 How to actually use babel 6
 
+* [Babel for the Server](#babel-for-the-server)
+
 ##Why?
 Babel 6 is a confusing tool, this guide shows you the steps you need to make it work..
 You always need a .babelrc file in the root of your project
@@ -19,7 +21,7 @@ npm install --save babel-preset-es2015
 }
 ````
 
-##Babel for the Server
+##Babel for the Server <a name="babel-for-the-server"></a>
 * You can either use babel-register or babel-node
 * make sure you have .babelrc
 
