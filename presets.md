@@ -6,7 +6,7 @@ Make sure you add the .babelrc file in your root project
 
 ````json
 {
-  "presets": ["es2015", ...]
+  "presets": ["es2015", "..."]
 }
 ````
 
@@ -20,7 +20,7 @@ npm install <NPM name> --save
 .babelrc
 ````json
 {
-    "presets": [<Presets>, ...]
+    "presets": ["<Presets>", "..."]
 }
 ````
 
